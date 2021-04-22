@@ -1,0 +1,9 @@
+<input type="text" placeholder="Type text">
+
+<div class="card-container">
+    <div class="card" *ngFor="let image of images">
+        <img [src]="images.downsized_medium?.url" alt="image">
+    </div>
+</div>
+
+<button type="button" (click)="search()">Search</button>
